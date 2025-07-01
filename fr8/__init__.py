@@ -1,1 +1,0 @@
-from location import fr8_location

@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
 [project]
 name = "fr8"
 version = "0.0.1"
@@ -13,6 +17,9 @@ classifiers = [
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
+dependencies = [
+    "geopy"
+]
 
 [project.urls]
 Homepage = "https://github.com/kiankyars/pypi"
