@@ -11,10 +11,10 @@ jobs:
     environment: pypi
 
     steps:  # List of steps to run in this job
-      - uses: actions/checkout@v4  # Step 1: Check out your code
+      - uses: actions/checkout@v4
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v3  # Step 2: Install uv using the official action
+        uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true  # Enable caching for dependencies
           cache-dependency-glob: uv.lock  # Cache based on uv.lock file
