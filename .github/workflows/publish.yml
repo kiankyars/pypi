@@ -4,6 +4,10 @@ on:
   release:
     types: ["published"]  # Trigger this workflow only when a GitHub Release is published
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   run:  # The job ID (can be any name)
     name: "Build and publish release"  # Human-readable job name
