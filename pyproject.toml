@@ -1,0 +1,18 @@
+[project]
+name = "fr8"
+version = "0.0.1"
+authors = [
+  { name="Kian Kyars", email="kiankyars@gmail.com" },
+]
+description = "Calculate your distance from fr8."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/kiankyars/pypi"
