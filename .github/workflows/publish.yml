@@ -12,7 +12,10 @@ jobs:
   run:  # The job ID (can be any name)
     name: "Build and publish release"  # Human-readable job name
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
-    environment: pypi
+    
+    environment:
+      name: pypi
+      url: https://pypi.org/p/fr8
 
     steps:  # List of steps to run in this job
       - uses: actions/checkout@v4
