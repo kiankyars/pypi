@@ -16,4 +16,4 @@ def fr8_location(address: str) -> float:
     except GeocoderTimedOut:
         return "address not found"
     fr8 = get_location("Otaranta 4, 02150 Espoo")
-    return calculate_distance(location.latitude, location.longitude, fr8.latitude, fr8.longitude)
+    return str(round(calculate_distance(location.latitude, location.longitude, fr8.latitude, fr8.longitude), 2)) + " km"
